@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json2MD.App", "Json2MD.App\Json2MD.App.csproj", "{EBF07E30-EA75-4812-8708-F8C01694D2B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json2MD.Lib", "Json2MD.Lib\Json2MD.Lib.csproj", "{668840EE-BA57-430F-966F-A44B04F21C1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json2MD.Tests", "Json2MD.Tests\Json2MD.Tests.csproj", "{E3E6ADB1-13AB-4FBF-960B-55FE9FDA9DF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{EBF07E30-EA75-4812-8708-F8C01694D2B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBF07E30-EA75-4812-8708-F8C01694D2B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBF07E30-EA75-4812-8708-F8C01694D2B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{668840EE-BA57-430F-966F-A44B04F21C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668840EE-BA57-430F-966F-A44B04F21C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668840EE-BA57-430F-966F-A44B04F21C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668840EE-BA57-430F-966F-A44B04F21C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3E6ADB1-13AB-4FBF-960B-55FE9FDA9DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3E6ADB1-13AB-4FBF-960B-55FE9FDA9DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3E6ADB1-13AB-4FBF-960B-55FE9FDA9DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3E6ADB1-13AB-4FBF-960B-55FE9FDA9DF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
