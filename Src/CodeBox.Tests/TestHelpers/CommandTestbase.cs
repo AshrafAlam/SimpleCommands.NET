@@ -1,14 +1,13 @@
 ﻿using ShapeCreator.Core;
-using ShapeCreator.Core.Command;
 using ShapeCreator.Core.Command.Infrastructure;
 using ShapeCreator.Core.DrawingObjects;
 using Xunit.Abstractions;
 
 namespace ShapeCreator.Tests.TestHelpers
 {
-    public class CanvasTestbase:Testbase
+    public class CommandTestbase:Testbase
     {
-        public CanvasTestbase(ITestOutputHelper output):base(output)
+        public CommandTestbase(ITestOutputHelper output):base(output)
         {
         }
 

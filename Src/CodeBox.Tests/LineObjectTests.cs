@@ -8,7 +8,7 @@ using static ShapeCreator.Tests.TestHelpers.TestDataPaths;
 
 namespace ShapeCreator.Tests
 {
-    public class LineObjectTests : CanvasTestbase
+    public class LineObjectTests : CommandTestbase
     {
         public LineObjectTests(ITestOutputHelper output) : base(output)
         {

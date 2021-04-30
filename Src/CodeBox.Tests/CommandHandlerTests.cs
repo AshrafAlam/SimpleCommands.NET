@@ -6,9 +6,9 @@ using static ShapeCreator.Tests.TestHelpers.ExpectedExceptionHelpers;
 
 namespace ShapeCreator.Tests
 {
-    public class CanvasCommandHandlerTests : CanvasTestbase
+    public class CommandHandlerTests : CommandTestbase
     {
-        public CanvasCommandHandlerTests(ITestOutputHelper output) : base(output)
+        public CommandHandlerTests(ITestOutputHelper output) : base(output)
         {
 
         }

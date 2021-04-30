@@ -7,7 +7,7 @@ using static ShapeCreator.Tests.TestHelpers.ExpectedExceptionHelpers;
 
 namespace ShapeCreator.Tests
 {
-    public class CanvasPixelAccessTests : CanvasTestbase
+    public class CanvasPixelAccessTests : CommandTestbase
     {
 
         public CanvasPixelAccessTests(ITestOutputHelper output) : base(output)

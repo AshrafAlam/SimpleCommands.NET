@@ -7,7 +7,7 @@ using static ShapeCreator.Tests.TestHelpers.TestDataPaths;
 
 namespace ShapeCreator.Tests
 {
-    public class BucketFillObjectTests : CanvasTestbase
+    public class BucketFillObjectTests : CommandTestbase
     {
         public BucketFillObjectTests(ITestOutputHelper output):base(output)
         {

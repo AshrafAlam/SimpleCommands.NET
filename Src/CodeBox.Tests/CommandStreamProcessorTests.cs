@@ -6,9 +6,9 @@ using static ShapeCreator.Tests.TestHelpers.TestDataPaths;
 
 namespace ShapeCreator.Tests
 {
-    public class CanvasCommandStreamProcessorTests : CanvasTestbase
+    public class CommandStreamProcessorTests : CommandTestbase
     {
-        public CanvasCommandStreamProcessorTests(ITestOutputHelper output):base(output)
+        public CommandStreamProcessorTests(ITestOutputHelper output):base(output)
         {
            
         }
