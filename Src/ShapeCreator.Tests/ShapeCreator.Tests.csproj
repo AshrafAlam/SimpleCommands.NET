@@ -75,6 +75,7 @@
     <Compile Include="CanvasCommandStreamProcessorTests.cs" />
     <Compile Include="CanvasCreationTests.cs" />
     <Compile Include="CanvasPixelAccessTests.cs" />
+    <Compile Include="HelloWriterTests.cs" />
     <Compile Include="RectangleObjectTests.cs" />
     <Compile Include="LineObjectTests.cs" />
     <Compile Include="CanvasRenderTests.cs" />

@@ -4,18 +4,16 @@ namespace ShapeCreator.Core
 {
     public class HelloWriter
     {
-        public HelloWriter(string text, IOutput output)
+        public HelloWriter(IOutput output)
         {
-            _text = text;
             _output = output;
         }
 
         private readonly IOutput _output;
-        private readonly string _text;
-
-        public void WriteLine()
+        
+        public void WriteLine(string str)
         {
-            _output.WriteLine("Hello " + _text);
+            _output.WriteLine("Hello " + str);
         }
     }
 }

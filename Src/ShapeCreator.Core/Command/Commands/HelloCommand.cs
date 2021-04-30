@@ -18,9 +18,9 @@ namespace ShapeCreator.Core.Command.Commands
             if (args.Length == 0)
                 throw new IndexOutOfRangeException("No parameter supplied for hello command.");
 
-            var helloWriter = new HelloWriter(args[0], _output);
+            var helloWriter = new HelloWriter(_output);
 
-            helloWriter.WriteLine();
+            helloWriter.WriteLine(args[0]);
         }
     }
 }
