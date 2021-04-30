@@ -50,23 +50,23 @@ namespace ShapeCreator.Tests.TestHelpers
             return bucketFillObject;
         }
 
-        protected CanvasCommandStreamProcessor Factory_CanvasCommandStreamProcessor(string inputFilePath)
+        protected CommandStreamProcessor Factory_CanvasCommandStreamProcessor(string inputFilePath)
         {
             var fileStreamInput = new FileStreamInput(inputFilePath);
             var canvasCommandStreamProcessor =
-                new CanvasCommandStreamProcessor(fileStreamInput, TestConsoleOutput);
+                new CommandStreamProcessor(fileStreamInput, TestConsoleOutput);
 
             return canvasCommandStreamProcessor;
         }
 
-        protected CanvasCommandHandler Factory_CommandHandler()
+        protected CommandHandler Factory_CommandHandler()
         {
-            return new CanvasCommandHandler(new DummayOutput());
+            return new CommandHandler(new DummayOutput());
         }
 
-        protected CanvasCommandHandler Factory_CommandHandlerWithCanvas()
+        protected CommandHandler Factory_CommandHandlerWithCanvas()
         {
-            var commandHandler = new CanvasCommandHandler(new DummayOutput());
+            var commandHandler = new CommandHandler(new DummayOutput());
             var createCanvasCommandName = "C";
             var createCanvasCommandArgs = new[] { "1", "1"};
             var createCanvasCommandValues = Factory_CommandValues(createCanvasCommandName, createCanvasCommandArgs);

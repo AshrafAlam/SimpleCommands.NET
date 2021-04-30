@@ -18,7 +18,7 @@ namespace ShapeCreator.Tests
         }
 
         [Fact]
-        public void Write_Create1x1SquareCanvas_ShouldCreateBlankCanvas()
+        public void Write_TestStringWritten_ShouldMatchOutoutAsExpected()
         {
             //Arrange
             const string HELLO_PARAM = "Ashraf";

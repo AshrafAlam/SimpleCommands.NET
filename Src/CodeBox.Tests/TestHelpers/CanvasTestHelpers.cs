@@ -83,9 +83,9 @@ namespace ShapeCreator.Tests.TestHelpers
             return PrivateMemberAccessor.Factory(canvas, "CanvasBoundary").GetProperty<CartesianPoint>();
         }
 
-        internal static Canvas GetCanvas(this CanvasCommandStreamProcessor canvasCommandStreamProcessor)
+        internal static Canvas GetCanvas(this CommandStreamProcessor canvasCommandStreamProcessor)
         {
-            var canvasCommandHandler = PrivateMemberAccessor.Factory(canvasCommandStreamProcessor, "CanvasCommandHandler").GetProperty<CanvasCommandHandler>();
+            var canvasCommandHandler = PrivateMemberAccessor.Factory(canvasCommandStreamProcessor, "CanvasCommandHandler").GetProperty<CommandHandler>();
             var canvas = PrivateMemberAccessor.Factory(canvasCommandHandler, "Canvas").GetProperty<Canvas>();
             return canvas;
         }

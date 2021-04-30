@@ -7,11 +7,11 @@ using ShapeCreator.Core.IO;
 
 namespace ShapeCreator.Core.Command.Infrastructure
 {
-    public class CanvasCommandHandler
+    public class CommandHandler
     {
         private readonly IOutput _output;
 
-        public CanvasCommandHandler(IOutput output)
+        public CommandHandler(IOutput output)
         {
             _output = output;
         }

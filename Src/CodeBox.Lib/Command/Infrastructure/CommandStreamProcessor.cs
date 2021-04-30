@@ -3,21 +3,21 @@ using ShapeCreator.Core.IO;
 
 namespace ShapeCreator.Core.Command.Infrastructure
 {
-    public class CanvasCommandStreamProcessor
+    public class CommandStreamProcessor
     {
         private readonly IOutput _output;
         private readonly IInput _input;
 
-        public CanvasCommandStreamProcessor(IInput input, IOutput output)
+        public CommandStreamProcessor(IInput input, IOutput output)
         {
             _input = input;
             _output = output;
         }
 
-        private CanvasCommandHandler _canvasCommandHandler;
+        private CommandHandler _canvasCommandHandler;
 
-        private CanvasCommandHandler CanvasCommandHandler =>
-            _canvasCommandHandler ?? (_canvasCommandHandler = new CanvasCommandHandler(_output));
+        private CommandHandler CanvasCommandHandler =>
+            _canvasCommandHandler ?? (_canvasCommandHandler = new CommandHandler(_output));
 
         public void ProcessCanvasCommands()
         {
