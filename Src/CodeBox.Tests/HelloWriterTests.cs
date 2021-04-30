@@ -23,7 +23,7 @@ namespace ShapeCreator.Tests
             //Arrange
             const string HELLO_PARAM = "Ashraf";
             var helloWriter = Factory_HelloWriter();
-            const string EXPECTED_OUTPUT = "Hello Ashraf";
+            const string EXPECTED_OUTPUT = "Hello Ashraf\r\n";
 
             //Act
             helloWriter.WriteLine(HELLO_PARAM);
