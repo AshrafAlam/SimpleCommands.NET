@@ -39,9 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HelloWriter.cs" />
     <Compile Include="CanvasOffset.cs" />
     <Compile Include="Canvas.cs" />
     <Compile Include="CartesianPoint.cs" />
+    <Compile Include="Command\Commands\HelloCommand.cs" />
     <Compile Include="Command\Infrastructure\CommandArgParser.cs" />
     <Compile Include="Command\Infrastructure\CommandValues.cs" />
     <Compile Include="Command\Commands\BasicCommand.cs" />

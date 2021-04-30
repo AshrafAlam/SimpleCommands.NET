@@ -20,7 +20,8 @@ namespace ShapeCreator.Core.Command.Infrastructure
 
         private BasicCommandRegistry<BasicCommand> BasicCommandRegistry =>
             _basicCommandRegistry ?? (_basicCommandRegistry = new BasicCommandRegistry<BasicCommand>(
-                new QuitCommand()));
+                new QuitCommand(),
+                new HelloCommand(_output)));
 
         private DrawInCanvasCommandRegistry<DrawObjectCommand> _drawInCanvasCommandRegistry;
 
@@ -59,10 +60,11 @@ namespace ShapeCreator.Core.Command.Infrastructure
 
         private Dictionary<string, CommandType> CommandTypeDictionary => _commandTypeDictionary ?? (_commandTypeDictionary = new Dictionary<string, CommandType>
         {
-            {"C", CommandType.CreateCanvas},
             {"L", CommandType.DrawInCanvas},
             {"R", CommandType.DrawInCanvas},
             {"B", CommandType.DrawInCanvas},
+            {"C", CommandType.CreateCanvas},
+            {"H", CommandType.Basic},
             {"Q", CommandType.Basic}
         });
         
