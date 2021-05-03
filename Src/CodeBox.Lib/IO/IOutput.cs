@@ -2,7 +2,7 @@
 {
     public interface IOutput
     {
-        void WriteLine(string lineToWrite);
+        void WriteLineWithTrack(string lineToWrite);
         void WriteLine(char[] lineToWrite);
     }
 }

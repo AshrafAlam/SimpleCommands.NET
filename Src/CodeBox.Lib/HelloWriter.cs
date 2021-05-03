@@ -14,7 +14,7 @@ namespace ShapeCreator.Core
 
         public void WriteLine(string str)
         {
-            _output.WriteLine("Hello " + str);
+            _output.WriteLineWithTrack("Hello " + str);
         }
 
     }

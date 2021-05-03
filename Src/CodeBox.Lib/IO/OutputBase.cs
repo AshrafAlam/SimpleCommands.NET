@@ -8,7 +8,7 @@ namespace ShapeCreator.Core.IO
 
         public abstract void WriteLine(char[] lineToWrite);
         
-        public void WriteLine(string lineToWrite)
+        public void WriteLineWithTrack(string lineToWrite)
         {
             _stringWriter.WriteLine(lineToWrite);
             WriteLine(lineToWrite.ToCharArray());
