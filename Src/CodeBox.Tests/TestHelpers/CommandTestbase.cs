@@ -11,9 +11,9 @@ namespace ShapeCreator.Tests.TestHelpers
         {
         }
 
-        private TestConsoleOutput _testConsoleOutput;
+        protected TestConsoleOutput _testConsoleOutput;
 
-        private TestConsoleOutput TestConsoleOutput => _testConsoleOutput ?? (_testConsoleOutput = new TestConsoleOutput(Output));
+        private new TestConsoleOutput TestConsoleOutput => _testConsoleOutput ?? (_testConsoleOutput = new TestConsoleOutput(Output));
 
         protected Canvas Factory_Canvas(int xCordinate, int yCordinate)
         {
@@ -49,7 +49,7 @@ namespace ShapeCreator.Tests.TestHelpers
             return bucketFillObject;
         }
 
-        protected CommandStreamProcessor Factory_CanvasCommandStreamProcessor(string inputFilePath)
+        protected CommandStreamProcessor Factory_CommandStreamProcessor(string inputFilePath)
         {
             var fileStreamInput = new FileStreamInput(inputFilePath);
             var canvasCommandStreamProcessor =

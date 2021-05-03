@@ -18,7 +18,7 @@ namespace ShapeCreator.Tests
         {
             //Arrange 
             var canvasCommandStreamProcessor =
-                Factory_CanvasCommandStreamProcessor(CommandWith20X4Canvas2Lines1Rectangle1BucketFillInputFilePath);
+                Factory_CommandStreamProcessor(CommandWith20X4Canvas2Lines1Rectangle1BucketFillInputFilePath);
             var expectedCanvas =
                 BuildCanvasFromFile(CommandWith20X4Canvas2Lines1Rectangle1BucketFillOutputCanvasFilePath);
 
@@ -37,7 +37,7 @@ namespace ShapeCreator.Tests
         {
             //Arrange 
             var canvasCommandStreamProcessor =
-                Factory_CanvasCommandStreamProcessor(CommandWith20X4Canvas1LineInputFilePath);
+                Factory_CommandStreamProcessor(CommandWith20X4Canvas1LineInputFilePath);
             var expectedCanvas =
                 BuildCanvasFromFile(CommandWith20X4Canvas1LineOutputCanvasFilePath);
 
@@ -56,7 +56,7 @@ namespace ShapeCreator.Tests
         {
             //Arrange 
             var canvasCommandStreamProcessor =
-                Factory_CanvasCommandStreamProcessor(CommandWith20X4CanvasInputFilePath);
+                Factory_CommandStreamProcessor(CommandWith20X4CanvasInputFilePath);
             var expectedCanvas =
                 BuildCanvasFromFile(CommandWith20X4CanvasOutputCanvasFilePath);
             

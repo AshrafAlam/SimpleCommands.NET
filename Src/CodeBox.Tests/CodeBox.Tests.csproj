@@ -13,6 +13,8 @@
     <None Remove="TestData\CommandWith20X4Canvas2Lines1Rectangle1BucketFillOutputCanvas.txt" />
     <None Remove="TestData\CommandWith20X4CanvasInput.txt" />
     <None Remove="TestData\CommandWith20X4CanvasOutputCanvas.txt" />
+    <None Remove="TestData\CommandWithHelloWorld_Input_Ashraf.txt" />
+    <None Remove="TestData\CommandWithHelloWorld_Ouput_Ashraf.txt" />
     <None Remove="TestData\C_0_0_NullCanvas.txt" />
     <None Remove="TestData\C_0_1_NullCanvas.txt" />
     <None Remove="TestData\C_1_1_BlankCanvas.txt" />
@@ -42,6 +44,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\CommandWith20X4CanvasOutputCanvas.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\CommandWithHelloWorld_Ouput_Ashraf.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\CommandWithHelloWorld_Input_Ashraf.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\C_0_0_NullCanvas.txt">
