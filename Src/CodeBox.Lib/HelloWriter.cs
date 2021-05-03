@@ -5,8 +5,6 @@ namespace ShapeCreator.Core
 {
     public class HelloWriter
     {
-        StringWriter stringWriter = new StringWriter();
-
         public HelloWriter(IOutput output)
         {
             _output = output;
@@ -16,14 +14,8 @@ namespace ShapeCreator.Core
 
         public void WriteLine(string str)
         {
-            var ouputText = "Hello " + str;
-            stringWriter.WriteLine(ouputText);
-            _output.WriteLine(ouputText);
+            _output.WriteLine("Hello " + str);
         }
 
-        public override string ToString()
-        {
-            return stringWriter.ToString();
-        }
     }
 }

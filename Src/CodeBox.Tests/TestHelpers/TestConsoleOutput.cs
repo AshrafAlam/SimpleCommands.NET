@@ -1,5 +1,4 @@
-﻿using ShapeCreator.Core;
-using ShapeCreator.Core.IO;
+﻿using ShapeCreator.Core.IO;
 using Xunit.Abstractions;
 using Xunit.Sdk;
 

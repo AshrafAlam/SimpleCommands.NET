@@ -7,9 +7,9 @@ namespace ShapeCreator.Tests
 {
     public class HelloWriterTests : Testbase
     {
-        HelloWriter Factory_HelloWriter()
+        HelloWriter Factory_HelloWriter(TestConsoleOutput testConsoleOutput)
         {
-            return new HelloWriter(new TestConsoleOutput(Output));
+            return new HelloWriter(testConsoleOutput);
         }
 
         public HelloWriterTests(ITestOutputHelper output):base(output)
@@ -21,15 +21,16 @@ namespace ShapeCreator.Tests
         public void Write_TestStringWritten_ShouldMatchOutoutAsExpected()
         {
             //Arrange
+            var testConsoleOutput = new TestConsoleOutput(Output);
+            var helloWriter = Factory_HelloWriter(testConsoleOutput);
             const string HELLO_PARAM = "Ashraf";
-            var helloWriter = Factory_HelloWriter();
             const string EXPECTED_OUTPUT = "Hello Ashraf\r\n";
-
+           
             //Act
             helloWriter.WriteLine(HELLO_PARAM);
 
             //Assert
-            Assert.Equal(EXPECTED_OUTPUT, helloWriter.ToString());
+            Assert.Equal(EXPECTED_OUTPUT, testConsoleOutput.ToString());
         }
     }
 }
