@@ -23,7 +23,7 @@ namespace ShapeCreator.Core.Command.Infrastructure
         {
             while (true)
             {
-                _output.WriteLineWithTrack("enter command:");
+                _output.WriteLine("enter command:");
 
                 var commandLine = _input.ReadLine();
 
@@ -36,7 +36,7 @@ namespace ShapeCreator.Core.Command.Infrastructure
                 }
                 catch (DrawingException coreException)
                 {
-                    _output.WriteLineWithTrack($"Error: {coreException.Message}.");
+                    _output.WriteLine($"Error: {coreException.Message}.");
                 }
             }
 

@@ -4,9 +4,9 @@ namespace ShapeCreator.Console
 {
     public class ConsoleOutput : OutputBase
     {
-        public override void WriteLine(char[] lineToWrite)
+        public ConsoleOutput():base((lineToWrite) => System.Console.WriteLine(lineToWrite))
         {
-            System.Console.WriteLine(lineToWrite);
+
         }
     }
 }

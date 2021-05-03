@@ -2,7 +2,6 @@
 {
     public interface IOutput
     {
-        void WriteLineWithTrack(string lineToWrite);
-        void WriteLine(char[] lineToWrite);
+        void WriteLine(string lineToWrite);
     }
 }

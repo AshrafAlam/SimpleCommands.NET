@@ -79,7 +79,7 @@ namespace ShapeCreator.Core
             for (int rowIteratorCount = 0;
                 rowIteratorCount < CanvasBoundary.YCordinate + CanvasOffset.RowBorderOffset;
                 rowIteratorCount++)
-                _output.WriteLine(DrawingArea[rowIteratorCount]);
+                _output.WriteLine(new string(DrawingArea[rowIteratorCount]));
         }
     }
 }

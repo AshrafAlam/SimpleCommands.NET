@@ -1,17 +1,21 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace ShapeCreator.Core.IO
 {
     public abstract class OutputBase : IOutput
     {
-        StringWriter _stringWriter = new StringWriter();
-
-        public abstract void WriteLine(char[] lineToWrite);
-        
-        public void WriteLineWithTrack(string lineToWrite)
+        readonly StringWriter _stringWriter = new StringWriter();
+        readonly Action<string> _writeAction;
+        public OutputBase(Action<string> writeAction)
+        {
+            _writeAction = writeAction;
+        }
+        public void WriteLine(string lineToWrite)
         {
             _stringWriter.WriteLine(lineToWrite);
-            WriteLine(lineToWrite.ToCharArray());
+            if (_writeAction != null)
+                _writeAction(lineToWrite);
         }
         public override string ToString()
         {
