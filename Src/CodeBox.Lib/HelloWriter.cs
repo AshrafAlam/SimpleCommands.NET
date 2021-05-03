@@ -1,5 +1,4 @@
 ﻿using ShapeCreator.Core.IO;
-using System.IO;
 
 namespace ShapeCreator.Core
 {
