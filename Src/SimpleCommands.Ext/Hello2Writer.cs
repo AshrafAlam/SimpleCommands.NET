@@ -13,7 +13,7 @@ namespace CodeBox.Core
 
         public void WriteLine(string str)
         {
-            _output.WriteLine("Hello 2" + str);
+            _output.WriteLine("Hello 2: " + str);
         }
 
     }

@@ -6,7 +6,7 @@ namespace CodeBox.Core.Command.Commands
 {
     public class Hello2Command : BasicCommand
     {
-        public Hello2Command(IOutput output) : base("H") 
+        public Hello2Command(IOutput output) : base("H2") 
         {
             _output = output;
         }
@@ -18,7 +18,7 @@ namespace CodeBox.Core.Command.Commands
             if (args.Length == 0)
                 throw new InvalidCommandArgumentLengthException(1);
 
-            var helloWriter = new HelloWriter(_output);
+            var helloWriter = new Hello2Writer(_output);
 
             helloWriter.WriteLine(args[0]);
         }

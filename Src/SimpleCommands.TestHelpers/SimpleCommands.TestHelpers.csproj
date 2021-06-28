@@ -7,20 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="TestData\CommandWithHelloWriter_Input_Ashraf.txt" />
-    <None Remove="TestData\CommandWithHelloWriter_Output_Ashraf.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="TestData\CommandWithHelloWriter_Output_Ashraf.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TestData\CommandWithHelloWriter_Input_Ashraf.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
@@ -36,7 +22,6 @@
   <ItemGroup>
     <ProjectReference Include="..\SimpleCommands.Ext\SimpleCommands.Ext.csproj" />
     <ProjectReference Include="..\SimpleCommands.Lib\SimpleCommands.Lib.csproj" />
-    <ProjectReference Include="..\SimpleCommands.TestHelpers\SimpleCommands.TestHelpers.csproj" />
   </ItemGroup>
 
   <ItemGroup>

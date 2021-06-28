@@ -20,7 +20,8 @@ namespace CodeBox.Core.Command.Infrastructure
         private BasicCommandRegistry<BasicCommand> BasicCommandRegistry =>
             _basicCommandRegistry ?? (_basicCommandRegistry = new BasicCommandRegistry<BasicCommand>(
                 new QuitCommand(),
-                new HelloCommand(_output)));
+                new HelloCommand(_output),
+                new Hello2Command(_output)));
 
         CommandType GetCommandType(string commandName)
         {
@@ -35,6 +36,7 @@ namespace CodeBox.Core.Command.Infrastructure
         private Dictionary<string, CommandType> CommandTypeDictionary => _commandTypeDictionary ?? (_commandTypeDictionary = new Dictionary<string, CommandType>
         {
             {"H", CommandType.Basic},
+            {"H2", CommandType.Basic},
             {"Q", CommandType.Basic}
         });
         
