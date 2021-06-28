@@ -19,7 +19,7 @@ namespace ShapeCreator.Core.Command.Infrastructure
         private CommandHandler CanvasCommandHandler =>
             _canvasCommandHandler ?? (_canvasCommandHandler = new CommandHandler(_output));
 
-        public void ProcessCanvasCommands()
+        public void ProcessCommands()
         {
             while (true)
             {

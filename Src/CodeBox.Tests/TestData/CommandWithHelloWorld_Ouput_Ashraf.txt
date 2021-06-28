@@ -1,1 +1,5 @@
-﻿Hello Ashraf
+﻿enter command:
+H Ashraf
+Hello Ashraf
+enter command:
+Q

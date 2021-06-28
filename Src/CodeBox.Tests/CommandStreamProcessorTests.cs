@@ -23,7 +23,7 @@ namespace ShapeCreator.Tests
                 BuildCanvasFromFile(CommandWith20X4Canvas2Lines1Rectangle1BucketFillOutputCanvasFilePath);
 
             //Act
-            canvasCommandStreamProcessor.ProcessCanvasCommands();
+            canvasCommandStreamProcessor.ProcessCommands();
 
             //Get Canvas
             var actualCanvas = canvasCommandStreamProcessor.GetCanvas();
@@ -42,7 +42,7 @@ namespace ShapeCreator.Tests
                 BuildCanvasFromFile(CommandWith20X4Canvas1LineOutputCanvasFilePath);
 
             //Act
-            canvasCommandStreamProcessor.ProcessCanvasCommands();
+            canvasCommandStreamProcessor.ProcessCommands();
 
             //Get Canvas
             var actualCanvas = canvasCommandStreamProcessor.GetCanvas();
@@ -61,7 +61,7 @@ namespace ShapeCreator.Tests
                 BuildCanvasFromFile(CommandWith20X4CanvasOutputCanvasFilePath);
             
             //Act
-            canvasCommandStreamProcessor.ProcessCanvasCommands();
+            canvasCommandStreamProcessor.ProcessCommands();
 
             //Get Canvas
             var actualCanvas = canvasCommandStreamProcessor.GetCanvas();
@@ -76,10 +76,10 @@ namespace ShapeCreator.Tests
             //Arrange 
             var commandStreamProcessor =
                 Factory_CommandStreamProcessor("CommandWithHelloWorld_Input_Ashraf.txt");
-            var expectedOutput = "Hello Ashraf";
+            var expectedOutput = "enter command:\r\nHello Ashraf\r\nenter command:\r\n";
 
             //Act
-            commandStreamProcessor.ProcessCanvasCommands();
+            commandStreamProcessor.ProcessCommands();
 
             //Get Canvas
             var output = commandStreamProcessor.GetOutput();

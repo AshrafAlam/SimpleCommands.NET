@@ -12,7 +12,7 @@ namespace ShapeCreator.Console
             var canvasCommandStreamProcessor =
                 new CommandStreamProcessor(consoleInput, consoleOutPut);
 
-            canvasCommandStreamProcessor.ProcessCanvasCommands();
+            canvasCommandStreamProcessor.ProcessCommands();
         }
     }
 }
