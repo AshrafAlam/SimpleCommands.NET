@@ -1,4 +1,4 @@
-﻿namespace CodeBox.Core.Command.Commands
+﻿namespace SimpleCommands.Core.Command.Commands
 {
     public interface ICommandCore
     {

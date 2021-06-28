@@ -1,8 +1,8 @@
-﻿using CodeBox.Core.IO;
+﻿using SimpleCommands.Core.IO;
 using Xunit.Abstractions;
 using Xunit.Sdk;
 
-namespace CodeBox.Tests.TestHelpers
+namespace SimpleCommands.TestHelpers
 {
     public class TestConsoleOutput : OutputBase
     {

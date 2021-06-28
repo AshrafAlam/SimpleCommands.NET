@@ -1,6 +1,6 @@
-using CodeBox.Core.Exceptions;
+using SimpleCommands.Core.Exceptions;
 
-namespace CodeBox.Core
+namespace SimpleCommands.Core
 {
     public class ExceptionThrower
     {

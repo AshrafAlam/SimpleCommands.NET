@@ -2,7 +2,7 @@
 using System.IO;
 using System.Reflection;
 
-namespace CodeBox.Tests.TestHelpers
+namespace SimpleCommands.TestHelpers
 {
     public class TestDataReader
     {

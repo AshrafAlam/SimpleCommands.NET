@@ -1,5 +1,5 @@
 ﻿
-namespace CodeBox.Core.Command.Commands
+namespace SimpleCommands.Core.Command.Commands
 {
     public abstract class BasicCommand : CommandCore, IBasicCommand
     {

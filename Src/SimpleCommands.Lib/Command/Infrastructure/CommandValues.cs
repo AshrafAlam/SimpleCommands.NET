@@ -1,4 +1,4 @@
-﻿namespace CodeBox.Core.Command.Infrastructure
+﻿namespace SimpleCommands.Core.Command.Infrastructure
 {
     public class CommandValues
     {

@@ -1,11 +1,10 @@
-﻿using CodeBox.Core.Command.Infrastructure;
-using CodeBox.Core.Exceptions;
-using CodeBox.Tests.TestHelpers;
+﻿using SimpleCommands.Core.Command.Infrastructure;
+using SimpleCommands.Core.Exceptions;
+using SimpleCommands.TestHelpers;
 using Xunit;
 using Xunit.Abstractions;
-using static CodeBox.Tests.TestHelpers.ExpectedExceptionHelpers;
 
-namespace CodeBox.Tests
+namespace SimpleCommands.Tests
 {
     public class CommandHandlerTests : CommandTestbase
     {
@@ -24,7 +23,7 @@ namespace CodeBox.Tests
             var commandValuesWithInvalidCommand = Factory_CommandValues(invalidCommand);
 
             //Act + Assert
-            ExpectExceptionType<InvalidCommandException>(() =>
+            ExpectedExceptionHelpers.ExpectExceptionType<InvalidCommandException>(() =>
                 commandHandler.ExecuteCommand(commandValuesWithInvalidCommand));
         }
               

@@ -1,8 +1,8 @@
-﻿using CodeBox.Core.Command.Commands;
-using CodeBox.Core.Command.Infrastructure;
-using CodeBox.Core.Exceptions;
+﻿using SimpleCommands.Core.Command.Commands;
+using SimpleCommands.Core.Command.Infrastructure;
+using SimpleCommands.Core.Exceptions;
 
-namespace CodeBox.Core.Command.Registries
+namespace SimpleCommands.Core.Command.Registries
 {
 
     public class BasicCommandRegistry<T> :

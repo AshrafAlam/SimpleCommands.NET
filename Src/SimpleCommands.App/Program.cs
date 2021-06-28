@@ -1,6 +1,6 @@
-﻿using CodeBox.Core.Command.Infrastructure;
+﻿using SimpleCommands.Core.Command.Infrastructure;
 
-namespace CodeBox.Console
+namespace SimpleCommands.Console
 {
     class Program
     {

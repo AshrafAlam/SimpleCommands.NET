@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
-using CodeBox.Core;
-using CodeBox.Core.IO;
+using SimpleCommands.Core;
+using SimpleCommands.Core.IO;
 
-namespace CodeBox.Tests.TestHelpers
+namespace SimpleCommands.TestHelpers
 {
     public class FileStreamInput : IInput, IDisposable
     {

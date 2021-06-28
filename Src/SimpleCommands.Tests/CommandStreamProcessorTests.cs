@@ -1,10 +1,8 @@
-﻿using CodeBox.Tests.TestHelpers;
+﻿using SimpleCommands.TestHelpers;
 using Xunit;
 using Xunit.Abstractions;
-using static CodeBox.Tests.TestHelpers.CommandTestHelpers;
-using static CodeBox.Tests.TestHelpers.TestDataPaths;
 
-namespace CodeBox.Tests
+namespace SimpleCommands.Tests
 {
     public class CommandStreamProcessorTests : CommandTestbase
     {
@@ -19,7 +17,7 @@ namespace CodeBox.Tests
             //Arrange 
             var commandStreamProcessor =
                 Factory_CommandStreamProcessor("CommandWithHelloWriter_Input_Ashraf.txt");
-            var expectedOutput = ReadFromFile("CommandWithHelloWriter_Output_Ashraf.txt");
+            var expectedOutput = CommandTestHelpers.ReadFromFile("CommandWithHelloWriter_Output_Ashraf.txt");
 
             //Act
             commandStreamProcessor.ProcessCommands();

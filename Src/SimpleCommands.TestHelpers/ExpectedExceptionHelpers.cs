@@ -1,8 +1,8 @@
 ﻿using System;
-using CodeBox.Core.Exceptions;
+using SimpleCommands.Core.Exceptions;
 using Xunit;
 
-namespace CodeBox.Tests.TestHelpers
+namespace SimpleCommands.TestHelpers
 {
     public class ExpectedExceptionHelpers
     {

@@ -1,6 +1,6 @@
-﻿using CodeBox.Core.IO;
+﻿using SimpleCommands.Core.IO;
 
-namespace CodeBox.Tests.TestHelpers
+namespace SimpleCommands.TestHelpers
 {
     public class DummayOutput : OutputBase
     {

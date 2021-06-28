@@ -1,8 +1,8 @@
 ﻿
-using CodeBox.Core.Exceptions;
-using CodeBox.Core.IO;
+using SimpleCommands.Core.Exceptions;
+using SimpleCommands.Core.IO;
 
-namespace CodeBox.Core.Command.Commands
+namespace SimpleCommands.Core.Command.Commands
 {
     public class Hello2Command : BasicCommand
     {

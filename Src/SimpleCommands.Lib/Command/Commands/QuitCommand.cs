@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace CodeBox.Core.Command.Commands
+namespace SimpleCommands.Core.Command.Commands
 {
     public class QuitCommand : BasicCommand
     {

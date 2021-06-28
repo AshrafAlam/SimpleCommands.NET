@@ -1,4 +1,4 @@
-﻿namespace CodeBox.Core.Exceptions
+﻿namespace SimpleCommands.Core.Exceptions
 {
     public class CommandException : CoreException
     {

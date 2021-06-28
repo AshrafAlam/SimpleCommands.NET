@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using CodeBox.Core.Command.Commands;
+using SimpleCommands.Core.Command.Commands;
 
-namespace CodeBox.Core.Command.Registries
+namespace SimpleCommands.Core.Command.Registries
 {
 
     public abstract class CommandRegistryBase<T>

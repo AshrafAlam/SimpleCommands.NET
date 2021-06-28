@@ -1,7 +1,7 @@
-﻿using CodeBox.Core.Command.Infrastructure;
+﻿using SimpleCommands.Core.Command.Infrastructure;
 using Xunit.Abstractions;
 
-namespace CodeBox.Tests.TestHelpers
+namespace SimpleCommands.TestHelpers
 {
     public class CommandTestbase:Testbase
     {

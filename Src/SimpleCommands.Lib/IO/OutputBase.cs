@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace CodeBox.Core.IO
+namespace SimpleCommands.Core.IO
 {
     public abstract class OutputBase : IOutput
     {

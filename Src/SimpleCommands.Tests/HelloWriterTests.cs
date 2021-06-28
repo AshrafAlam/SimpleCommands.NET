@@ -1,9 +1,9 @@
-﻿using CodeBox.Core;
-using CodeBox.Tests.TestHelpers;
+﻿using SimpleCommands.Core;
+using SimpleCommands.TestHelpers;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace CodeBox.Tests
+namespace SimpleCommands.Tests
 {
     public class HelloWriterTests : CommandTestbase
     {

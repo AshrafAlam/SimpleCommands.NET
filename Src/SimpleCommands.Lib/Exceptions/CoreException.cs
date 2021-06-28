@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CodeBox.Core.Exceptions
+namespace SimpleCommands.Core.Exceptions
 {
     public class CoreException : InvalidOperationException
     {

@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using CodeBox.Core.Command.Commands;
-using CodeBox.Core.Command.Registries;
-using CodeBox.Core.Exceptions;
-using CodeBox.Core.IO;
+using SimpleCommands.Core.Command.Commands;
+using SimpleCommands.Core.Command.Registries;
+using SimpleCommands.Core.Exceptions;
+using SimpleCommands.Core.IO;
 
-namespace CodeBox.Core.Command.Infrastructure
+namespace SimpleCommands.Core.Command.Infrastructure
 {
     public class CommandHandler:ICommandHandler
     {

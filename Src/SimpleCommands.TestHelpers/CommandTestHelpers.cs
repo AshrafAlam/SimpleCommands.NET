@@ -1,8 +1,8 @@
 ﻿using System.IO;
-using CodeBox.Core.Command.Infrastructure;
-using CodeBox.Core.IO;
+using SimpleCommands.Core.Command.Infrastructure;
+using SimpleCommands.Core.IO;
 
-namespace CodeBox.Tests.TestHelpers
+namespace SimpleCommands.TestHelpers
 {
     public static class CommandTestHelpers
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using CodeBox.Core.Exceptions;
+using SimpleCommands.Core.Exceptions;
 
-namespace CodeBox.Core.Command.Infrastructure
+namespace SimpleCommands.Core.Command.Infrastructure
 {
     public static class CommandArgParser
     {

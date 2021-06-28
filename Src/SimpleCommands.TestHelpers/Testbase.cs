@@ -1,6 +1,6 @@
 ﻿using Xunit.Abstractions;
 
-namespace CodeBox.Tests.TestHelpers
+namespace SimpleCommands.TestHelpers
 {
     public class Testbase
     {

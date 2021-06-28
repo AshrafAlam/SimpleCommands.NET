@@ -1,6 +1,6 @@
-﻿using CodeBox.Core.IO;
+﻿using SimpleCommands.Core.IO;
 
-namespace CodeBox.Console
+namespace SimpleCommands.Console
 {
     public class ConsoleOutput : OutputBase
     {

@@ -1,4 +1,4 @@
-﻿namespace CodeBox.Core.IO
+﻿namespace SimpleCommands.Core.IO
 {
     public interface IOutput
     {

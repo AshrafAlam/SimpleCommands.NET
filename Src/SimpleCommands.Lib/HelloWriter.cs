@@ -1,6 +1,6 @@
-﻿using CodeBox.Core.IO;
+﻿using SimpleCommands.Core.IO;
 
-namespace CodeBox.Core
+namespace SimpleCommands.Core
 {
     public class HelloWriter
     {
