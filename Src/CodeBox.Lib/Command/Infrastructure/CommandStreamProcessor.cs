@@ -23,11 +23,13 @@ namespace ShapeCreator.Core.Command.Infrastructure
         {
             while (true)
             {
-                _output.WriteLine("enter command:");
+                _output.WriteLine("enter command: ");
 
                 var commandLine = _input.ReadLine();
 
                 if (string.IsNullOrEmpty(commandLine)) break;
+
+                _output.WriteLine("user entered command: " + commandLine);
 
                 try
                 {

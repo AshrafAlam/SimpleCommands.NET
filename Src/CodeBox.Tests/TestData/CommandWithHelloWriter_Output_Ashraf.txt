@@ -1,3 +1,4 @@
-﻿enter command:
+﻿enter command: 
+user entered command: H Ashraf
 Hello Ashraf
-enter command:
+enter command: 
