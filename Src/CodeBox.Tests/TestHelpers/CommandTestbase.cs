@@ -52,10 +52,10 @@ namespace ShapeCreator.Tests.TestHelpers
         protected CommandStreamProcessor Factory_CommandStreamProcessor(string inputFilePath)
         {
             var fileStreamInput = new FileStreamInput(inputFilePath);
-            var canvasCommandStreamProcessor =
+            var commandStreamProcessor =
                 new CommandStreamProcessor(fileStreamInput, TestConsoleOutput);
 
-            return canvasCommandStreamProcessor;
+            return commandStreamProcessor;
         }
 
         protected CommandHandler Factory_CommandHandler()

@@ -3,6 +3,7 @@ using System.Linq;
 using ShapeCreator.Core;
 using ShapeCreator.Core.Command;
 using ShapeCreator.Core.Command.Infrastructure;
+using ShapeCreator.Core.IO;
 
 namespace ShapeCreator.Tests.TestHelpers
 {
@@ -88,6 +89,12 @@ namespace ShapeCreator.Tests.TestHelpers
             var canvasCommandHandler = PrivateMemberAccessor.Factory(canvasCommandStreamProcessor, "CanvasCommandHandler").GetProperty<CommandHandler>();
             var canvas = PrivateMemberAccessor.Factory(canvasCommandHandler, "Canvas").GetProperty<Canvas>();
             return canvas;
+        }
+
+        internal static IOutput GetOutput(this CommandStreamProcessor canvasCommandStreamProcessor)
+        {
+            var output = PrivateMemberAccessor.Factory(canvasCommandStreamProcessor, "_output").GetField<IOutput>();
+            return output;
         }
     }
 }

@@ -69,5 +69,23 @@ namespace ShapeCreator.Tests
             //Assert
             Assert.True(expectedCanvas.IsEquals(actualCanvas));
         }
+
+        [Fact]
+        public void ProcessCommands_HelloCommandPassed_ShouldRespondHello()
+        {
+            //Arrange 
+            var commandStreamProcessor =
+                Factory_CommandStreamProcessor("CommandWithHelloWorld_Input_Ashraf.txt");
+            var expectedOutput = "Hello Ashraf";
+
+            //Act
+            commandStreamProcessor.ProcessCanvasCommands();
+
+            //Get Canvas
+            var output = commandStreamProcessor.GetOutput();
+
+            //Assert
+            Assert.Equal(expectedOutput, output.ToString());
+        }
     }
 }
