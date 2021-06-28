@@ -1,5 +1,3 @@
 ﻿enter command:
-H Ashraf
 Hello Ashraf
 enter command:
-Q

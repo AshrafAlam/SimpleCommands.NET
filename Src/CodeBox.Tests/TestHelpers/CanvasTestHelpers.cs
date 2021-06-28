@@ -9,7 +9,13 @@ namespace ShapeCreator.Tests.TestHelpers
 {
     public static class CanvasTestHelpers
     {
-        public static void Draw(this Canvas canvas, char[] line, int lineNo)
+        public static string ReadFromFile(string dataFilePath)
+        {
+            var fileText = File.ReadAllText(TestDataPaths.DefaultTestDataFolderPath + "\\" + dataFilePath);
+            return fileText;
+        }
+
+            public static void Draw(this Canvas canvas, char[] line, int lineNo)
         {
             var drawingArea = canvas.GetDrawingArea();
             drawingArea[lineNo] = line;

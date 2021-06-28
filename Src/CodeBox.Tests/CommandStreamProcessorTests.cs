@@ -75,8 +75,8 @@ namespace ShapeCreator.Tests
         {
             //Arrange 
             var commandStreamProcessor =
-                Factory_CommandStreamProcessor("CommandWithHelloWorld_Input_Ashraf.txt");
-            var expectedOutput = "enter command:\r\nHello Ashraf\r\nenter command:\r\n";
+                Factory_CommandStreamProcessor("CommandWithHelloWriter_Input_Ashraf.txt");
+            var expectedOutput = ReadFromFile("CommandWithHelloWriter_Output_Ashraf.txt");
 
             //Act
             commandStreamProcessor.ProcessCommands();
