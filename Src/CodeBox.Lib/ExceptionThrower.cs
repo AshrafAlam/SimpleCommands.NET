@@ -1,6 +1,6 @@
-using ShapeCreator.Core.Exceptions;
+using CodeBox.Core.Exceptions;
 
-namespace ShapeCreator.Core
+namespace CodeBox.Core
 {
     public class ExceptionThrower
     {

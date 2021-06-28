@@ -1,8 +1,8 @@
-﻿using ShapeCreator.Core.Command.Commands;
-using ShapeCreator.Core.Command.Infrastructure;
-using ShapeCreator.Core.Exceptions;
+﻿using CodeBox.Core.Command.Commands;
+using CodeBox.Core.Command.Infrastructure;
+using CodeBox.Core.Exceptions;
 
-namespace ShapeCreator.Core.Command.Registries
+namespace CodeBox.Core.Command.Registries
 {
 
     public class BasicCommandRegistry<T> :

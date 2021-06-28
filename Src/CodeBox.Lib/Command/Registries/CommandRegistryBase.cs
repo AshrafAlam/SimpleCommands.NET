@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using ShapeCreator.Core.Command.Commands;
+using CodeBox.Core.Command.Commands;
 
-namespace ShapeCreator.Core.Command.Registries
+namespace CodeBox.Core.Command.Registries
 {
 
     public abstract class CommandRegistryBase<T>

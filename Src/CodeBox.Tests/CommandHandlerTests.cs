@@ -1,10 +1,10 @@
-﻿using ShapeCreator.Core.Exceptions;
-using ShapeCreator.Tests.TestHelpers;
+﻿using CodeBox.Core.Exceptions;
+using CodeBox.Tests.TestHelpers;
 using Xunit;
 using Xunit.Abstractions;
-using static ShapeCreator.Tests.TestHelpers.ExpectedExceptionHelpers;
+using static CodeBox.Tests.TestHelpers.ExpectedExceptionHelpers;
 
-namespace ShapeCreator.Tests
+namespace CodeBox.Tests
 {
     public class CommandHandlerTests : CommandTestbase
     {

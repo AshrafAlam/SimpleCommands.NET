@@ -1,8 +1,8 @@
 ﻿using System.IO;
-using ShapeCreator.Core.Command.Infrastructure;
-using ShapeCreator.Core.IO;
+using CodeBox.Core.Command.Infrastructure;
+using CodeBox.Core.IO;
 
-namespace ShapeCreator.Tests.TestHelpers
+namespace CodeBox.Tests.TestHelpers
 {
     public static class CommandTestHelpers
     {

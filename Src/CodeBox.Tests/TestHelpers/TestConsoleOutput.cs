@@ -1,8 +1,8 @@
-﻿using ShapeCreator.Core.IO;
+﻿using CodeBox.Core.IO;
 using Xunit.Abstractions;
 using Xunit.Sdk;
 
-namespace ShapeCreator.Tests.TestHelpers
+namespace CodeBox.Tests.TestHelpers
 {
     public class TestConsoleOutput : OutputBase
     {

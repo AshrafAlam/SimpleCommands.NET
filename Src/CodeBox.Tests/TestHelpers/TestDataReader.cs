@@ -2,7 +2,7 @@
 using System.IO;
 using System.Reflection;
 
-namespace ShapeCreator.Tests.TestHelpers
+namespace CodeBox.Tests.TestHelpers
 {
     public class TestDataReader
     {

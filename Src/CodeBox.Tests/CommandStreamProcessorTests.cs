@@ -1,10 +1,10 @@
-﻿using ShapeCreator.Tests.TestHelpers;
+﻿using CodeBox.Tests.TestHelpers;
 using Xunit;
 using Xunit.Abstractions;
-using static ShapeCreator.Tests.TestHelpers.CommandTestHelpers;
-using static ShapeCreator.Tests.TestHelpers.TestDataPaths;
+using static CodeBox.Tests.TestHelpers.CommandTestHelpers;
+using static CodeBox.Tests.TestHelpers.TestDataPaths;
 
-namespace ShapeCreator.Tests
+namespace CodeBox.Tests
 {
     public class CommandStreamProcessorTests : CommandTestbase
     {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
-using ShapeCreator.Core;
-using ShapeCreator.Core.IO;
+using CodeBox.Core;
+using CodeBox.Core.IO;
 
-namespace ShapeCreator.Tests.TestHelpers
+namespace CodeBox.Tests.TestHelpers
 {
     public class FileStreamInput : IInput, IDisposable
     {

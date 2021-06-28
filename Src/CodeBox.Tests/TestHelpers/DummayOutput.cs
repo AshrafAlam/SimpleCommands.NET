@@ -1,6 +1,6 @@
-﻿using ShapeCreator.Core.IO;
+﻿using CodeBox.Core.IO;
 
-namespace ShapeCreator.Tests.TestHelpers
+namespace CodeBox.Tests.TestHelpers
 {
     public class DummayOutput : OutputBase
     {

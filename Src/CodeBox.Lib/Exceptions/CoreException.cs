@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ShapeCreator.Core.Exceptions
+namespace CodeBox.Core.Exceptions
 {
     public class CoreException : InvalidOperationException
     {

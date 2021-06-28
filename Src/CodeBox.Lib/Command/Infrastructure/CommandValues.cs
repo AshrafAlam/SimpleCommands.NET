@@ -1,4 +1,4 @@
-﻿namespace ShapeCreator.Core.Command.Infrastructure
+﻿namespace CodeBox.Core.Command.Infrastructure
 {
     public class CommandValues
     {

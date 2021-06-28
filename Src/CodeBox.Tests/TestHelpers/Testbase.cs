@@ -1,6 +1,6 @@
 ﻿using Xunit.Abstractions;
 
-namespace ShapeCreator.Tests.TestHelpers
+namespace CodeBox.Tests.TestHelpers
 {
     public class Testbase
     {

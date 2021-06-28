@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using ShapeCreator.Core.Exceptions;
+using CodeBox.Core.Exceptions;
 
-namespace ShapeCreator.Core.Command.Infrastructure
+namespace CodeBox.Core.Command.Infrastructure
 {
     public static class CommandArgParser
     {

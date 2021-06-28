@@ -1,6 +1,6 @@
-﻿using ShapeCreator.Core.IO;
+﻿using CodeBox.Core.IO;
 
-namespace ShapeCreator.Core
+namespace CodeBox.Core
 {
     public class HelloWriter
     {

@@ -1,8 +1,8 @@
 ﻿
-using ShapeCreator.Core.Exceptions;
-using ShapeCreator.Core.IO;
+using CodeBox.Core.Exceptions;
+using CodeBox.Core.IO;
 
-namespace ShapeCreator.Core.Command.Commands
+namespace CodeBox.Core.Command.Commands
 {
     public class HelloCommand : BasicCommand
     {

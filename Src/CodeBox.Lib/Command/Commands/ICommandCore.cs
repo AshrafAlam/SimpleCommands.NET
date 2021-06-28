@@ -1,4 +1,4 @@
-﻿namespace ShapeCreator.Core.Command.Commands
+﻿namespace CodeBox.Core.Command.Commands
 {
     public interface ICommandCore
     {

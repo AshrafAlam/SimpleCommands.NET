@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace ShapeCreator.Core.Command.Commands
+namespace CodeBox.Core.Command.Commands
 {
     public class QuitCommand : BasicCommand
     {

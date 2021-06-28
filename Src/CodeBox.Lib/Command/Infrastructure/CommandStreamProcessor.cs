@@ -1,7 +1,7 @@
-﻿using ShapeCreator.Core.Exceptions;
-using ShapeCreator.Core.IO;
+﻿using CodeBox.Core.Exceptions;
+using CodeBox.Core.IO;
 
-namespace ShapeCreator.Core.Command.Infrastructure
+namespace CodeBox.Core.Command.Infrastructure
 {
     public class CommandStreamProcessor
     {

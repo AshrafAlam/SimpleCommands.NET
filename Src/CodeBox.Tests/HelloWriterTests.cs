@@ -1,9 +1,9 @@
-﻿using ShapeCreator.Core;
-using ShapeCreator.Tests.TestHelpers;
+﻿using CodeBox.Core;
+using CodeBox.Tests.TestHelpers;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace ShapeCreator.Tests
+namespace CodeBox.Tests
 {
     public class HelloWriterTests : CommandTestbase
     {

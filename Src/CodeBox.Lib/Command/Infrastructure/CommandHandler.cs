@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using ShapeCreator.Core.Command.Commands;
-using ShapeCreator.Core.Command.Registries;
-using ShapeCreator.Core.Exceptions;
-using ShapeCreator.Core.IO;
+using CodeBox.Core.Command.Commands;
+using CodeBox.Core.Command.Registries;
+using CodeBox.Core.Exceptions;
+using CodeBox.Core.IO;
 
-namespace ShapeCreator.Core.Command.Infrastructure
+namespace CodeBox.Core.Command.Infrastructure
 {
     public class CommandHandler
     {

@@ -1,7 +1,7 @@
-﻿using ShapeCreator.Core.Command.Infrastructure;
+﻿using CodeBox.Core.Command.Infrastructure;
 using Xunit.Abstractions;
 
-namespace ShapeCreator.Tests.TestHelpers
+namespace CodeBox.Tests.TestHelpers
 {
     public class CommandTestbase:Testbase
     {

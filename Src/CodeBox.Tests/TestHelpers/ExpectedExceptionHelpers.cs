@@ -1,8 +1,8 @@
 ﻿using System;
-using ShapeCreator.Core.Exceptions;
+using CodeBox.Core.Exceptions;
 using Xunit;
 
-namespace ShapeCreator.Tests.TestHelpers
+namespace CodeBox.Tests.TestHelpers
 {
     public class ExpectedExceptionHelpers
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace ShapeCreator.Core.Command.Commands
+namespace CodeBox.Core.Command.Commands
 {
     public abstract class BasicCommand : CommandCore, IBasicCommand
     {

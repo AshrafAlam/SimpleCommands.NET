@@ -1,6 +1,6 @@
-﻿using ShapeCreator.Core.IO;
+﻿using CodeBox.Core.IO;
 
-namespace ShapeCreator.Console
+namespace CodeBox.Console
 {
     public class ConsoleInput : IInput
     {

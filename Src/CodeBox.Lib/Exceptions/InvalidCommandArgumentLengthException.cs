@@ -1,4 +1,4 @@
-﻿namespace ShapeCreator.Core.Exceptions
+﻿namespace CodeBox.Core.Exceptions
 {
     public class InvalidCommandArgumentLengthException : CommandException
     {

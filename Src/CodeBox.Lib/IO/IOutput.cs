@@ -1,4 +1,4 @@
-﻿namespace ShapeCreator.Core.IO
+﻿namespace CodeBox.Core.IO
 {
     public interface IOutput
     {

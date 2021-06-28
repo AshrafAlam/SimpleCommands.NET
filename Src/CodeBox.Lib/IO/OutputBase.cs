@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace ShapeCreator.Core.IO
+namespace CodeBox.Core.IO
 {
     public abstract class OutputBase : IOutput
     {

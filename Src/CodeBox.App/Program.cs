@@ -1,6 +1,6 @@
-﻿using ShapeCreator.Core.Command.Infrastructure;
+﻿using CodeBox.Core.Command.Infrastructure;
 
-namespace ShapeCreator.Console
+namespace CodeBox.Console
 {
     class Program
     {
