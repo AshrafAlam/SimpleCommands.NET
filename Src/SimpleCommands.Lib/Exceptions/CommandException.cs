@@ -2,9 +2,9 @@
 {
     public class CommandException : CoreException
     {
-        public CommandException(string message = null):base(message)
+        public CommandException(string message = null) : base(message)
         {
-           
+
         }
     }
 }

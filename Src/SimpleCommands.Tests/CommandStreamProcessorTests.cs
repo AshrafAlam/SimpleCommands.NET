@@ -6,9 +6,9 @@ namespace SimpleCommands.Tests
 {
     public class CommandStreamProcessorTests : CommandTestbase
     {
-        public CommandStreamProcessorTests(ITestOutputHelper output):base(output)
+        public CommandStreamProcessorTests(ITestOutputHelper output) : base(output)
         {
-           
+
         }
 
         [Fact]

@@ -6,7 +6,7 @@ namespace SimpleCommands.Core.Command.Commands
 {
     public class HelloCommand : BasicCommand
     {
-        public HelloCommand(IOutput output) : base("H") 
+        public HelloCommand(IOutput output) : base("H")
         {
             _output = output;
         }

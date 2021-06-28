@@ -6,7 +6,7 @@ namespace SimpleCommands.TestHelpers
 {
     public class TestConsoleOutput : OutputBase
     {
-        public TestConsoleOutput(ITestOutputHelper output) : 
+        public TestConsoleOutput(ITestOutputHelper output) :
             base((lineToWrite) => output.WriteLine(lineToWrite))
         {
 

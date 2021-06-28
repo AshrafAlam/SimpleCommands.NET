@@ -10,6 +10,6 @@ namespace SimpleCommands.Core
         {
             throw new T();
         }
-        
+
     }
 }

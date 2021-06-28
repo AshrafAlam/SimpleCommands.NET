@@ -3,9 +3,9 @@ using Xunit.Abstractions;
 
 namespace SimpleCommands.TestHelpers
 {
-    public class CommandTestbase:Testbase
+    public class CommandTestbase : Testbase
     {
-        public CommandTestbase(ITestOutputHelper output):base(output)
+        public CommandTestbase(ITestOutputHelper output) : base(output)
         {
         }
 
@@ -17,7 +17,7 @@ namespace SimpleCommands.TestHelpers
         {
             var fileStreamInput = new FileStreamInput(inputFilePath);
             var commandStreamProcessor =
-                new CommandStreamProcessor(fileStreamInput, TestConsoleOutput, 
+                new CommandStreamProcessor(fileStreamInput, TestConsoleOutput,
                 new CommandHandler(TestConsoleOutput));
 
             return commandStreamProcessor;
@@ -25,7 +25,7 @@ namespace SimpleCommands.TestHelpers
 
         protected CommandValues Factory_CommandValues(string commandName, params string[] commandArgs)
         {
-            return new CommandValues {CommandName = commandName, CommandArgs = commandArgs};
+            return new CommandValues { CommandName = commandName, CommandArgs = commandArgs };
         }
     }
 }

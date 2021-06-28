@@ -4,7 +4,7 @@ namespace SimpleCommands.Console
 {
     public class ConsoleOutput : OutputBase
     {
-        public ConsoleOutput():base((lineToWrite) => System.Console.WriteLine(lineToWrite))
+        public ConsoleOutput() : base((lineToWrite) => System.Console.WriteLine(lineToWrite))
         {
 
         }

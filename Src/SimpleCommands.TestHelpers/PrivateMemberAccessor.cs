@@ -23,12 +23,12 @@ namespace SimpleCommands.TestHelpers
 
         public T GetField<T>()
         {
-            return (T) PrivateObject.GetField(_memberName);
+            return (T)PrivateObject.GetField(_memberName);
         }
 
         public T GetProperty<T>()
         {
-            return (T) PrivateObject.GetProperty(_memberName);
+            return (T)PrivateObject.GetProperty(_memberName);
         }
     }
 }

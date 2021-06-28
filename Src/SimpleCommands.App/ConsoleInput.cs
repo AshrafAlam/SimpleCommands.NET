@@ -6,7 +6,7 @@ namespace SimpleCommands.Console
     {
         public string ReadLine()
         {
-           return System.Console.ReadLine();
+            return System.Console.ReadLine();
         }
     }
 }

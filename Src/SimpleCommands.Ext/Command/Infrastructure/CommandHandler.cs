@@ -1,12 +1,12 @@
-﻿using System.Collections.Generic;
-using SimpleCommands.Core.Command.Commands;
+﻿using SimpleCommands.Core.Command.Commands;
 using SimpleCommands.Core.Command.Registries;
 using SimpleCommands.Core.Exceptions;
 using SimpleCommands.Core.IO;
+using System.Collections.Generic;
 
 namespace SimpleCommands.Core.Command.Infrastructure
 {
-    public class CommandHandler:ICommandHandler
+    public class CommandHandler : ICommandHandler
     {
         private readonly IOutput _output;
 
@@ -39,7 +39,7 @@ namespace SimpleCommands.Core.Command.Infrastructure
             {"H2", CommandType.Basic},
             {"Q", CommandType.Basic}
         });
-        
+
         public void ExecuteCommand(CommandValues commandValues)
         {
             CommandType commandType = GetCommandType(commandValues.CommandName);

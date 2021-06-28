@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using SimpleCommands.Core.Command.Commands;
+﻿using SimpleCommands.Core.Command.Commands;
+using System.Collections.Generic;
 
 namespace SimpleCommands.Core.Command.Registries
 {

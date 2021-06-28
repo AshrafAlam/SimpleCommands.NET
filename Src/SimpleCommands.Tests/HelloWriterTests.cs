@@ -12,7 +12,7 @@ namespace SimpleCommands.Tests
             return new HelloWriter(TestConsoleOutput);
         }
 
-        public HelloWriterTests(ITestOutputHelper output):base(output)
+        public HelloWriterTests(ITestOutputHelper output) : base(output)
         {
         }
 
@@ -23,13 +23,13 @@ namespace SimpleCommands.Tests
             var helloWriter = Factory_HelloWriter();
             const string HELLO_PARAM = "Ashraf";
             const string EXPECTED_OUTPUT = "Hello Ashraf\r\n";
-           
+
             //Act
             helloWriter.WriteLine(HELLO_PARAM);
 
             //Assert
             Assert.Equal(EXPECTED_OUTPUT, TestConsoleOutput.ToString());
         }
-               
+
     }
 }

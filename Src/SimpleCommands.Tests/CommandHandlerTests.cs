@@ -26,6 +26,6 @@ namespace SimpleCommands.Tests
             ExpectedExceptionHelpers.ExpectExceptionType<InvalidCommandException>(() =>
                 commandHandler.ExecuteCommand(commandValuesWithInvalidCommand));
         }
-              
+
     }
 }

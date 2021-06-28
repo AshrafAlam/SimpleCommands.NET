@@ -1,6 +1,6 @@
-﻿using System.IO;
-using SimpleCommands.Core.Command.Infrastructure;
+﻿using SimpleCommands.Core.Command.Infrastructure;
 using SimpleCommands.Core.IO;
+using System.IO;
 
 namespace SimpleCommands.TestHelpers
 {

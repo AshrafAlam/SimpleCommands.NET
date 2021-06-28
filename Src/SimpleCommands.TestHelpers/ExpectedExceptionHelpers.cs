@@ -1,5 +1,5 @@
-﻿using System;
-using SimpleCommands.Core.Exceptions;
+﻿using SimpleCommands.Core.Exceptions;
+using System;
 using Xunit;
 
 namespace SimpleCommands.TestHelpers

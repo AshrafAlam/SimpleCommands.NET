@@ -1,6 +1,6 @@
-﻿using System;
+﻿using SimpleCommands.Core.Exceptions;
+using System;
 using System.Linq;
-using SimpleCommands.Core.Exceptions;
 
 namespace SimpleCommands.Core.Command.Infrastructure
 {
@@ -38,11 +38,11 @@ namespace SimpleCommands.Core.Command.Infrastructure
             if (end >= args.Length)
                 throw new ArgumentOutOfRangeException(nameof(end));
 
-            int[] intArray = new int[(int) (end - start) + 1];
+            int[] intArray = new int[(int)(end - start) + 1];
 
             int intArrayCounter = 0;
 
-            for (var i = (int) start; i <= end; i++)
+            for (var i = (int)start; i <= end; i++)
             {
                 if (!int.TryParse(args[i], out var intValue))
                     ExceptionThrower.Throws<InvalidCommandArgumentFormatException>();
