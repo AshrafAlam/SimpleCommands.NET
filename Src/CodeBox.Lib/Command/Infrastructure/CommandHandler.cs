@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using ShapeCreator.Core.Command.Commands;
 using ShapeCreator.Core.Command.Registries;
 using ShapeCreator.Core.Exceptions;
@@ -23,31 +22,6 @@ namespace ShapeCreator.Core.Command.Infrastructure
                 new QuitCommand(),
                 new HelloCommand(_output)));
 
-        private DrawInCanvasCommandRegistry<DrawObjectCommand> _drawInCanvasCommandRegistry;
-
-        private DrawInCanvasCommandRegistry<DrawObjectCommand> DrawInCanvasCommandRegistry =>
-            _drawInCanvasCommandRegistry ?? (_drawInCanvasCommandRegistry =
-                new DrawInCanvasCommandRegistry<DrawObjectCommand>(
-                    new DrawLineCommand(),
-                    new DrawRectangleCommand(),
-                    new DrawBucketFillCommand()));
-
-
-        private Canvas _canvas;
-
-        private Canvas Canvas
-        {
-            get
-            {
-                if (_canvas == null)
-                    ExceptionThrower.Throws<CanvasMustBeCreatedFirstException>();
-
-                return _canvas;
-            }
-
-            set => _canvas = value;
-        }
-
         CommandType GetCommandType(string commandName)
         {
             if (CommandTypeDictionary.ContainsKey(commandName))
@@ -60,10 +34,6 @@ namespace ShapeCreator.Core.Command.Infrastructure
 
         private Dictionary<string, CommandType> CommandTypeDictionary => _commandTypeDictionary ?? (_commandTypeDictionary = new Dictionary<string, CommandType>
         {
-            {"L", CommandType.DrawInCanvas},
-            {"R", CommandType.DrawInCanvas},
-            {"B", CommandType.DrawInCanvas},
-            {"C", CommandType.CreateCanvas},
             {"H", CommandType.Basic},
             {"Q", CommandType.Basic}
         });
@@ -74,14 +44,6 @@ namespace ShapeCreator.Core.Command.Infrastructure
 
             switch (commandType)
             {
-                case CommandType.CreateCanvas:
-                    Canvas = new CanvasCreationCommand(_output).CreateCommand(commandValues.CommandArgs);
-                    Canvas.Render();
-                    break;
-                case CommandType.DrawInCanvas:
-                    DrawInCanvasCommandRegistry.Execute(commandValues, Canvas);
-                    Canvas.Render();
-                    break;
                 case CommandType.Basic:
                     BasicCommandRegistry.Execute(commandValues);
                     break;

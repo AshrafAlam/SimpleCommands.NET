@@ -52,44 +52,5 @@ namespace ShapeCreator.Core.Command.Infrastructure
 
             return intArray;
         }
-
-        public static CartesianPoint ParseToCartesianPoint(this string[] args)
-        {
-            if (args.Length != ExpectedCommandArgumentLengthForCartesianPoint)
-               throw new InvalidCommandArgumentLengthException(ExpectedCommandArgumentLengthForCartesianPoint);
-
-            var start = 0;
-
-            var argsInt = args.ParseToIntArray(start, start + 1);
-
-            var xCordinate = argsInt[0];
-            var yCondinate = argsInt[1];
-
-            return new CartesianPoint(xCordinate, yCondinate);
-
-        }
-        
-        public static CartesianDimension ParseToCartesianDimension(this string[] args)
-        {
-            if (args == null)
-                throw new ArgumentNullException(nameof(args));
-
-            if (args.Length != ExpectedCommandArgumentLengthForCartesianDimension)
-                throw new InvalidCommandArgumentLengthException(ExpectedCommandArgumentLengthForCartesianDimension);
-
-            var upperLeftCordinate = new[] {args[0], args[1]}.ParseToCartesianPoint();
-            var lowerRightCordinate = new[] {args[2], args[3]}.ParseToCartesianPoint();
-
-            return new CartesianDimension
-            (
-                upperLeftCordinate,
-                lowerRightCordinate
-            );
-
-        }
-
-        const int ExpectedCommandArgumentLengthForCartesianDimension = 4;
-        const int ExpectedCommandArgumentLengthForCartesianPoint = 2;
-
     }
 }
