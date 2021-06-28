@@ -1,0 +1,110 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TestData\CommandWith20X4Canvas1LineInput.txt" />
+    <None Remove="TestData\CommandWith20X4Canvas1LineOutputCanvas.txt" />
+    <None Remove="TestData\CommandWith20X4Canvas2Lines1Rectangle1BucketFillInput.txt" />
+    <None Remove="TestData\CommandWith20X4Canvas2Lines1Rectangle1BucketFillOutputCanvas.txt" />
+    <None Remove="TestData\CommandWith20X4CanvasInput.txt" />
+    <None Remove="TestData\CommandWith20X4CanvasOutputCanvas.txt" />
+    <None Remove="TestData\CommandWithHelloWriter_Input_Ashraf.txt" />
+    <None Remove="TestData\CommandWithHelloWriter_Output_Ashraf.txt" />
+    <None Remove="TestData\C_0_0_NullCanvas.txt" />
+    <None Remove="TestData\C_0_1_NullCanvas.txt" />
+    <None Remove="TestData\C_1_1_BlankCanvas.txt" />
+    <None Remove="TestData\C_1_1_L1_1_1_1.txt" />
+    <None Remove="TestData\C_20_4_BlankCanvas.txt" />
+    <None Remove="TestData\C_20_4_B_10_3_o.txt" />
+    <None Remove="TestData\C_20_4_L1_2_6_2.txt" />
+    <None Remove="TestData\C_20_4_L1_2_6_2_L6_3_6_4.txt" />
+    <None Remove="TestData\C_20_4_R_14_1_18_3.txt" />
+    <None Remove="TestData\C_20_4_R_14_1_18_3_B_10_3_o.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TestData\CommandWith20X4Canvas1LineInput.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\CommandWith20X4Canvas1LineOutputCanvas.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\CommandWith20X4Canvas2Lines1Rectangle1BucketFillInput.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\CommandWith20X4Canvas2Lines1Rectangle1BucketFillOutputCanvas.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\CommandWith20X4CanvasInput.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\CommandWith20X4CanvasOutputCanvas.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\CommandWithHelloWriter_Output_Ashraf.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\CommandWithHelloWriter_Input_Ashraf.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\C_0_0_NullCanvas.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\C_0_1_NullCanvas.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\C_1_1_BlankCanvas.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\C_1_1_L1_1_1_1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\C_20_4_BlankCanvas.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\C_20_4_B_10_3_o.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\C_20_4_L1_2_6_2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\C_20_4_L1_2_6_2_L6_3_6_4.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\C_20_4_R_14_1_18_3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\C_20_4_R_14_1_18_3_B_10_3_o.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="1.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CodeBox.Lib\CodeBox.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+      <HintPath>..\References\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
