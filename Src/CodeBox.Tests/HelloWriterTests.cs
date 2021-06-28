@@ -30,20 +30,6 @@ namespace ShapeCreator.Tests
             //Assert
             Assert.Equal(EXPECTED_OUTPUT, TestConsoleOutput.ToString());
         }
-
-        [Fact]
-        public void Write_TestStringWrittenFromFile_ShouldMatchOutoutAsExpected()
-        {
-            ////Arrange
-            //var commandStreamProcessor =
-            //    Factory_CommandStreamProcessor("CommandWithHelloWorld_Input_Ashraf.txt");
-            //const string EXPECTED_OUTPUT = "Hello Ashraf\r\n";
-
-            ////Act
-            //commandStreamProcessor.ProcessCanvasCommands();
-
-            ////Assert
-            //Assert.Equal(EXPECTED_OUTPUT, TestConsoleOutput.ToString());
-        }
+               
     }
 }
