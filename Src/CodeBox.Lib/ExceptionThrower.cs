@@ -6,7 +6,7 @@ namespace ShapeCreator.Core
     {
 
         public static void Throws<T>()
-            where T : DrawingException, new()
+            where T : CommandException, new()
         {
             throw new T();
         }

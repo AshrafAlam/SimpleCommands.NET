@@ -1,6 +1,6 @@
 ﻿namespace ShapeCreator.Core.Exceptions
 {
-    public class InvalidCommandArgumentFormatException : DrawingException
+    public class InvalidCommandArgumentFormatException : CommandException
     {
     
     }

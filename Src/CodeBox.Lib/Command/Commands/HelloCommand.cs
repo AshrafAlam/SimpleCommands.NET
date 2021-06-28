@@ -1,6 +1,6 @@
 ﻿
+using ShapeCreator.Core.Exceptions;
 using ShapeCreator.Core.IO;
-using System;
 
 namespace ShapeCreator.Core.Command.Commands
 {
@@ -16,7 +16,7 @@ namespace ShapeCreator.Core.Command.Commands
         public override void Execute(string[] args)
         {
             if (args.Length == 0)
-                throw new IndexOutOfRangeException("No parameter supplied for hello command.");
+                throw new InvalidCommandArgumentLengthException(1);
 
             var helloWriter = new HelloWriter(_output);
 

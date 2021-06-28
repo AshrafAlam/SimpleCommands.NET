@@ -36,7 +36,7 @@ namespace ShapeCreator.Core.Command.Infrastructure
                     var commandValues = CommandArgParser.ParseToCommandValues(commandLine.Trim());
                     CanvasCommandHandler.ExecuteCommand(commandValues);
                 }
-                catch (DrawingException coreException)
+                catch (CommandException coreException)
                 {
                     _output.WriteLine($"Error: {coreException.Message}.");
                 }
