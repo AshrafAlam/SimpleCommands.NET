@@ -17,14 +17,10 @@ namespace CodeBox.Tests.TestHelpers
         {
             var fileStreamInput = new FileStreamInput(inputFilePath);
             var commandStreamProcessor =
-                new CommandStreamProcessor(fileStreamInput, TestConsoleOutput);
+                new CommandStreamProcessor(fileStreamInput, TestConsoleOutput, 
+                new CommandHandler(TestConsoleOutput));
 
             return commandStreamProcessor;
-        }
-
-        protected CommandHandler Factory_CommandHandler()
-        {
-            return new CommandHandler(new DummayOutput());
         }
 
         protected CommandValues Factory_CommandValues(string commandName, params string[] commandArgs)

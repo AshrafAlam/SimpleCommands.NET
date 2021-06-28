@@ -6,7 +6,7 @@ using CodeBox.Core.IO;
 
 namespace CodeBox.Core.Command.Infrastructure
 {
-    public class CommandHandler
+    public class CommandHandler:ICommandHandler
     {
         private readonly IOutput _output;
 

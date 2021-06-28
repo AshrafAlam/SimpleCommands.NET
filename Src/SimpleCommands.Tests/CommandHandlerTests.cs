@@ -1,4 +1,5 @@
-﻿using CodeBox.Core.Exceptions;
+﻿using CodeBox.Core.Command.Infrastructure;
+using CodeBox.Core.Exceptions;
 using CodeBox.Tests.TestHelpers;
 using Xunit;
 using Xunit.Abstractions;
@@ -18,7 +19,7 @@ namespace CodeBox.Tests
         {
             //Arrange 
             var commandHandler =
-                Factory_CommandHandler();
+                new CommandHandler(new DummayOutput());
             var invalidCommand = "x";
             var commandValuesWithInvalidCommand = Factory_CommandValues(invalidCommand);
 

@@ -6,11 +6,12 @@ namespace CodeBox.Console
     {
         static void Main(string[] args)
         {
-            var consoleOutPut = new ConsoleOutput();
+            var consoleOutput = new ConsoleOutput();
             var consoleInput = new ConsoleInput();
+            var commandHandler = new CommandHandler(consoleOutput);
 
             var canvasCommandStreamProcessor =
-                new CommandStreamProcessor(consoleInput, consoleOutPut);
+                new CommandStreamProcessor(consoleInput, consoleOutput, commandHandler);
 
             canvasCommandStreamProcessor.ProcessCommands();
         }

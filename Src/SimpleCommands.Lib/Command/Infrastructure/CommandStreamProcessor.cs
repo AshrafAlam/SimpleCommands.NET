@@ -7,17 +7,14 @@ namespace CodeBox.Core.Command.Infrastructure
     {
         private readonly IOutput _output;
         private readonly IInput _input;
+        private readonly ICommandHandler _commandHandler;
 
-        public CommandStreamProcessor(IInput input, IOutput output)
+        public CommandStreamProcessor(IInput input, IOutput output, ICommandHandler commandHandler)
         {
             _input = input;
             _output = output;
+            _commandHandler = commandHandler;
         }
-
-        private CommandHandler _commandHandler;
-
-        private CommandHandler CommandHandler =>
-            _commandHandler ?? (_commandHandler = new CommandHandler(_output));
 
         public void ProcessCommands()
         {
@@ -34,7 +31,7 @@ namespace CodeBox.Core.Command.Infrastructure
                 try
                 {
                     var commandValues = CommandArgParser.ParseToCommandValues(commandLine.Trim());
-                    CommandHandler.ExecuteCommand(commandValues);
+                    _commandHandler.ExecuteCommand(commandValues);
                 }
                 catch (CommandException coreException)
                 {
