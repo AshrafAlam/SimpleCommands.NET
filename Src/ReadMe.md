@@ -1,4 +1,4 @@
-#  Shape Creator Drawing Console 
+#  Simple Commands Console 
 
 This program is intended to provide a console based interface where an end user will be able to create different types of shapes with key board characters.
 
