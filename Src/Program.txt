@@ -1,0 +1,25 @@
+*** The Problem ***
+
+__Description__
+
+You're given the task of writing a simple console version of a program. 
+At this time, the functionality of the program is quite limited but this might change in the future. 
+In a nutshell, the program should work as follows:
+ 1. Hello World
+ 2. Quit
+
+Command 		Description
+H name          Should show Hello name
+Q               Should quit the program.
+
+__Sample I/O__
+
+Below is a sample run of the program. User input is prefixed with enter command:
+
+enter command: H Ashraf
+Hello Ashraf
+
+enter command: H John
+Hello John
+
+enter command: Q
