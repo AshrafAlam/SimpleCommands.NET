@@ -65,5 +65,3 @@ For details please check [here](drawing_program.txt).
 * The application can also provide command to generate help related texts, along with relevant command errors can provide additional details. 
 * For testing command stream, quit logic has not been covered, as the quit command executes Environment.Exit(0), which causes tests to be shown as abroted. We can write corresoding test adapter or utilies to provide support in this.
 * Having a stress test will provide additional details of the program capacities, specially maximum canvas boundaries regarding the memory limit.
-
-=================================================================================
