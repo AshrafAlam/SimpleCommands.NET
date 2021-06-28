@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CodeBox.Lib\CodeBox.Lib.csproj" />
+    <ProjectReference Include="..\SimpleCommands.Lib\SimpleCommands.Lib.csproj" />
   </ItemGroup>
 
 </Project>

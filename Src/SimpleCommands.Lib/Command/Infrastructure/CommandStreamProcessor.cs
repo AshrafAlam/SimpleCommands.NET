@@ -14,10 +14,10 @@ namespace CodeBox.Core.Command.Infrastructure
             _output = output;
         }
 
-        private CommandHandler _canvasCommandHandler;
+        private CommandHandler _commandHandler;
 
-        private CommandHandler CanvasCommandHandler =>
-            _canvasCommandHandler ?? (_canvasCommandHandler = new CommandHandler(_output));
+        private CommandHandler CommandHandler =>
+            _commandHandler ?? (_commandHandler = new CommandHandler(_output));
 
         public void ProcessCommands()
         {
@@ -34,7 +34,7 @@ namespace CodeBox.Core.Command.Infrastructure
                 try
                 {
                     var commandValues = CommandArgParser.ParseToCommandValues(commandLine.Trim());
-                    CanvasCommandHandler.ExecuteCommand(commandValues);
+                    CommandHandler.ExecuteCommand(commandValues);
                 }
                 catch (CommandException coreException)
                 {
