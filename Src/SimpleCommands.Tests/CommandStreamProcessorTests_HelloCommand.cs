@@ -4,20 +4,20 @@ using Xunit.Abstractions;
 
 namespace SimpleCommands.Tests
 {
-    public class CommandStreamProcessorTests: CommandTestbase
+    public class CommandStreamProcessorTests_HelloCommand : CommandTestbase
     {
-        public CommandStreamProcessorTests(ITestOutputHelper output) : base(output)
+        public CommandStreamProcessorTests_HelloCommand(ITestOutputHelper output) : base(output)
         {
 
         }
 
         [Fact]
-        public void ProcessCommands_NoCommandPassed_Should()
+        public void ProcessCommands_HelloCommandPassed_ShouldRespondHello()
         {
             //Arrange 
             var commandStreamProcessor =
-                Factory_CommandStreamProcessor("CommandHello_SingleCommand_Input.txt");
-            var expectedOutput = CommandTestHelpers.ReadFromFile("CommandHello_SingleCommand_Output.txt");
+                Factory_CommandStreamProcessor("ProcessCommands_Hello_SingleCommand_Input.txt");
+            var expectedOutput = CommandTestHelpers.ReadFromFile("ProcessCommands_Hello_SingleCommand_Output.txt");
 
             //Act
             commandStreamProcessor.ProcessCommands();
@@ -30,12 +30,12 @@ namespace SimpleCommands.Tests
         }
 
         [Fact]
-        public void ProcessCommands_WrongCommandsPassed_Should()
+        public void ProcessCommands_MultipleHelloCommandsPassed_ShouldRespondMultipleLines()
         {
             //Arrange 
             var commandStreamProcessor =
-                Factory_CommandStreamProcessor("CommandHello_MultipleCommand_Input.txt");
-            var expectedOutput = CommandTestHelpers.ReadFromFile("CommandHello_MultipleCommand_Output.txt");
+                Factory_CommandStreamProcessor("ProcessCommands_Hello_MultipleCommand_Input.txt");
+            var expectedOutput = CommandTestHelpers.ReadFromFile("ProcessCommands_Hello_MultipleCommand_Output.txt");
 
             //Act
             commandStreamProcessor.ProcessCommands();

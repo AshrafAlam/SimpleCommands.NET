@@ -7,23 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="TestData\CommandHello_MultipleCommand_Input.txt" />
-    <None Remove="TestData\CommandHello_MultipleCommand_Output.txt" />
-    <None Remove="TestData\CommandHello_SingleCommand_Input.txt" />
-    <None Remove="TestData\CommandHello_SingleCommand_Output.txt" />
+    <None Remove="TestData\ProcessCommands_Hello_MultipleCommand_Input.txt" />
+    <None Remove="TestData\ProcessCommands_Hello_MultipleCommand_Output.txt" />
+    <None Remove="TestData\ProcessCommands_Hello_SingleCommand_Input.txt" />
+    <None Remove="TestData\ProcessCommands_Hello_SingleCommand_Output.txt" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="TestData\CommandHello_MultipleCommand_Output.txt">
+    <Content Include="TestData\ProcessCommands_Hello_MultipleCommand_Output.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="TestData\CommandHello_MultipleCommand_Input.txt">
+    <Content Include="TestData\ProcessCommands_Hello_MultipleCommand_Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="TestData\CommandHello_SingleCommand_Output.txt">
+    <Content Include="TestData\ProcessCommands_Hello_SingleCommand_Output.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="TestData\CommandHello_SingleCommand_Input.txt">
+    <Content Include="TestData\ProcessCommands_Hello_SingleCommand_Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
