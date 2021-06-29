@@ -1,6 +1,6 @@
 ﻿using SimpleCommands.Core.Command.Infrastructure;
 
-namespace SimpleCommands.Console
+namespace SimpleCommands.App
 {
     class Program
     {
