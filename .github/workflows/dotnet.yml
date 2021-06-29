@@ -20,6 +20,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build /Src/SimpleCommands.sln
+      run: dotnet build --source ../../Src/SimpleCommands.sln
     - name: Test
       run: dotnet test --no-build --verbosity normal
