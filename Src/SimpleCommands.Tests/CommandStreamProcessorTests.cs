@@ -16,17 +16,17 @@ namespace SimpleCommands.Tests
         {
             //Arrange 
             var commandStreamProcessor =
-                Factory_CommandStreamProcessor("CommandWithHelloWriter_Input_Ashraf.txt");
-            var expectedOutput = CommandTestHelpers.ReadFromFile("CommandWithHelloWriter_Output_Ashraf.txt");
+                Factory_CommandStreamProcessor("CommandHello_SingleCommand_Input.txt");
+            var expectedOutput = CommandTestHelpers.ReadFromFile("CommandHello_SingleCommand_Output.txt");
 
             //Act
             commandStreamProcessor.ProcessCommands();
 
-            //Get Canvas
-            var output = commandStreamProcessor.GetOutput();
+            //Get output
+            var actualOutput = commandStreamProcessor.GetOutput().ToString();
 
             //Assert
-            Assert.Equal(expectedOutput, output.ToString());
+            Assert.Equal(expectedOutput, actualOutput);
         }
 
         [Fact]
@@ -34,17 +34,17 @@ namespace SimpleCommands.Tests
         {
             //Arrange 
             var commandStreamProcessor =
-                Factory_CommandStreamProcessor("CommandWithHelloWriter_MultipleHello_Input.txt");
-            var expectedOutput = CommandTestHelpers.ReadFromFile("CommandWithHelloWriter_MultipleHello_Output.txt");
+                Factory_CommandStreamProcessor("CommandHello_MultipleCommand_Input.txt");
+            var expectedOutput = CommandTestHelpers.ReadFromFile("CommandHello_MultipleCommand_Output.txt");
 
             //Act
             commandStreamProcessor.ProcessCommands();
 
-            //Get Canvas
-            var output = commandStreamProcessor.GetOutput();
+            //Get output
+            var actualOutput = commandStreamProcessor.GetOutput().ToString();
 
             //Assert
-            Assert.Equal(expectedOutput, output.ToString());
+            Assert.Equal(expectedOutput, actualOutput);
         }
 
     }
