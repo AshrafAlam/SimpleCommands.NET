@@ -17,7 +17,7 @@ namespace SimpleCommands.Tests
             //Arrange 
             var commandStreamProcessor =
                 Factory_CommandStreamProcessor("ProcessCommands_Hello_SingleCommand_Input.txt");
-            var expectedOutput = CommandTestHelpers.ReadFromFile("ProcessCommands_Hello_SingleCommand_Output.txt");
+            var expectedOutput = TestDataReader.LoadAsString("ProcessCommands_Hello_SingleCommand_Output.txt");
 
             //Act
             commandStreamProcessor.ProcessCommands();
@@ -35,7 +35,7 @@ namespace SimpleCommands.Tests
             //Arrange 
             var commandStreamProcessor =
                 Factory_CommandStreamProcessor("ProcessCommands_Hello_MultipleCommand_Input.txt");
-            var expectedOutput = CommandTestHelpers.ReadFromFile("ProcessCommands_Hello_MultipleCommand_Output.txt");
+            var expectedOutput = TestDataReader.LoadAsString("ProcessCommands_Hello_MultipleCommand_Output.txt");
 
             //Act
             commandStreamProcessor.ProcessCommands();

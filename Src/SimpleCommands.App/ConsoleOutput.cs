@@ -1,6 +1,6 @@
 ﻿using SimpleCommands.Core.IO;
 
-namespace SimpleCommands.Console
+namespace SimpleCommands.App
 {
     public class ConsoleOutput : OutputBase
     {
