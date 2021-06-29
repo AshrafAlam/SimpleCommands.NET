@@ -8,10 +8,18 @@
 
   <ItemGroup>
     <None Remove="TestData\CommandWithHelloWriter_Input_Ashraf.txt" />
+    <None Remove="TestData\CommandWithHelloWriter_MultipleHello_Input.txt" />
+    <None Remove="TestData\CommandWithHelloWriter_MultipleHello_Output.txt" />
     <None Remove="TestData\CommandWithHelloWriter_Output_Ashraf.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="TestData\CommandWithHelloWriter_MultipleHello_Output.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\CommandWithHelloWriter_MultipleHello_Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\CommandWithHelloWriter_Output_Ashraf.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

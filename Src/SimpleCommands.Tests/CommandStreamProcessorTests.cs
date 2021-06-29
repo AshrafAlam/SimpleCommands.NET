@@ -28,5 +28,24 @@ namespace SimpleCommands.Tests
             //Assert
             Assert.Equal(expectedOutput, output.ToString());
         }
+
+        [Fact]
+        public void ProcessCommands_MultipleHelloCommandsPassed_ShouldRespondMultipleLines()
+        {
+            //Arrange 
+            var commandStreamProcessor =
+                Factory_CommandStreamProcessor("CommandWithHelloWriter_MultipleHello_Input.txt");
+            var expectedOutput = CommandTestHelpers.ReadFromFile("CommandWithHelloWriter_MultipleHello_Output.txt");
+
+            //Act
+            commandStreamProcessor.ProcessCommands();
+
+            //Get Canvas
+            var output = commandStreamProcessor.GetOutput();
+
+            //Assert
+            Assert.Equal(expectedOutput, output.ToString());
+        }
+
     }
 }
