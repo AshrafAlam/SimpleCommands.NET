@@ -13,10 +13,10 @@
 
   <ItemGroup>
     <Content Include="TestData\CommandWithHelloWriter_Output_Ashraf.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\CommandWithHelloWriter_Input_Ashraf.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
