@@ -12,12 +12,12 @@ namespace SimpleCommands.Tests
         }
 
         [Fact]
-        public void ProcessCommands_NoCommandPassed_Should()
+        public void ProcessCommands_NoCommandPassed_ShouldProvideEmptyResponse()
         {
             //Arrange 
             var commandStreamProcessor =
-                Factory_CommandStreamProcessor("CommandHello_SingleCommand_Input.txt");
-            var expectedOutput = CommandTestHelpers.ReadFromFile("CommandHello_SingleCommand_Output.txt");
+                Factory_CommandStreamProcessor("ProcessCommands_NoCommand_Input.txt");
+            var expectedOutput = CommandTestHelpers.ReadFromFile("ProcessCommands_NoCommand_Output.txt");
 
             //Act
             commandStreamProcessor.ProcessCommands();
@@ -34,8 +34,8 @@ namespace SimpleCommands.Tests
         {
             //Arrange 
             var commandStreamProcessor =
-                Factory_CommandStreamProcessor("CommandHello_MultipleCommand_Input.txt");
-            var expectedOutput = CommandTestHelpers.ReadFromFile("CommandHello_MultipleCommand_Output.txt");
+                Factory_CommandStreamProcessor("ProcessCommands_WrongCommand_Input.txt");
+            var expectedOutput = CommandTestHelpers.ReadFromFile("ProcessCommands_WrongCommand_Output.txt");
 
             //Act
             commandStreamProcessor.ProcessCommands();

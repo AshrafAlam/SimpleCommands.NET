@@ -11,6 +11,10 @@
     <None Remove="TestData\ProcessCommands_Hello_MultipleCommand_Output.txt" />
     <None Remove="TestData\ProcessCommands_Hello_SingleCommand_Input.txt" />
     <None Remove="TestData\ProcessCommands_Hello_SingleCommand_Output.txt" />
+    <None Remove="TestData\ProcessCommands_NoCommand_Input.txt" />
+    <None Remove="TestData\ProcessCommands_NoCommand_Output.txt" />
+    <None Remove="TestData\ProcessCommands_WrongCommand_Input.txt" />
+    <None Remove="TestData\ProcessCommands_WrongCommand_Output.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +22,18 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\ProcessCommands_Hello_MultipleCommand_Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ProcessCommands_WrongCommand_Output.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ProcessCommands_WrongCommand_Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ProcessCommands_NoCommand_Output.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ProcessCommands_NoCommand_Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\ProcessCommands_Hello_SingleCommand_Output.txt">
