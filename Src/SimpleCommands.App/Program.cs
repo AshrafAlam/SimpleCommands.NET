@@ -10,10 +10,10 @@ namespace SimpleCommands.Console
             var consoleInput = new ConsoleInput();
             var commandHandler = new CommandHandler(consoleOutput);
 
-            var canvasCommandStreamProcessor =
+            var commandStreamProcessor =
                 new CommandStreamProcessor(consoleInput, consoleOutput, commandHandler);
 
-            canvasCommandStreamProcessor.ProcessCommands();
+            commandStreamProcessor.ProcessCommands();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace SimpleCommands.Tests
         }
 
         [Fact]
-        public void Write_TestStringWritten_ShouldMatchOutoutAsExpected()
+        public void WriteLine_TestStringWritten_ShouldMatchOutoutAsExpected()
         {
             //Arrange
             var helloWriter = Factory_HelloWriter();
@@ -27,8 +27,11 @@ namespace SimpleCommands.Tests
             //Act
             helloWriter.WriteLine(HELLO_PARAM);
 
+            //Get output
+            var actualOutput = TestConsoleOutput.ToString();
+
             //Assert
-            Assert.Equal(EXPECTED_OUTPUT, TestConsoleOutput.ToString());
+            Assert.Equal(EXPECTED_OUTPUT, actualOutput);
         }
 
     }

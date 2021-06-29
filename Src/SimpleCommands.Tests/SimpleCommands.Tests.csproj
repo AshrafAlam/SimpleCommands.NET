@@ -7,16 +7,40 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="TestData\CommandWithHelloWriter_Input_Ashraf.txt" />
-    <None Remove="TestData\CommandWithHelloWriter_Output_Ashraf.txt" />
+    <None Remove="TestData\ProcessCommands_Hello_MultipleCommand_Input.txt" />
+    <None Remove="TestData\ProcessCommands_Hello_MultipleCommand_Output.txt" />
+    <None Remove="TestData\ProcessCommands_Hello_SingleCommand_Input.txt" />
+    <None Remove="TestData\ProcessCommands_Hello_SingleCommand_Output.txt" />
+    <None Remove="TestData\ProcessCommands_NoCommand_Input.txt" />
+    <None Remove="TestData\ProcessCommands_NoCommand_Output.txt" />
+    <None Remove="TestData\ProcessCommands_WrongCommand_Input.txt" />
+    <None Remove="TestData\ProcessCommands_WrongCommand_Output.txt" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="TestData\CommandWithHelloWriter_Output_Ashraf.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="TestData\ProcessCommands_Hello_MultipleCommand_Output.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="TestData\CommandWithHelloWriter_Input_Ashraf.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="TestData\ProcessCommands_Hello_MultipleCommand_Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ProcessCommands_WrongCommand_Output.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ProcessCommands_WrongCommand_Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ProcessCommands_NoCommand_Output.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ProcessCommands_NoCommand_Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ProcessCommands_Hello_SingleCommand_Output.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ProcessCommands_Hello_SingleCommand_Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
