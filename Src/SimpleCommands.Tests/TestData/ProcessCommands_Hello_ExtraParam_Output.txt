@@ -1,4 +1,4 @@
-﻿enter command: 
-user entered command: H 1 2
+﻿Enter command: 
+User entered command: H 1 2
 Error: Invalid command argument length. Expected length 1.
-enter command: 
+Enter command: 

@@ -1,4 +1,4 @@
-﻿enter command: 
-user entered command: x
+﻿Enter command: 
+User entered command: x
 Error: Invlid command name provided. Command name: x..
-enter command: 
+Enter command: 

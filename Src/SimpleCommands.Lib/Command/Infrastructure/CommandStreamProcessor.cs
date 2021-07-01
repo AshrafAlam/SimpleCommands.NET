@@ -20,13 +20,13 @@ namespace SimpleCommands.Core.Command.Infrastructure
         {
             while (true)
             {
-                _output.WriteLine("enter command: ");
+                _output.WriteLine("Enter command: ");
 
                 var commandLine = _input.ReadLine();
 
                 if (string.IsNullOrEmpty(commandLine)) break;
 
-                _output.WriteLine("user entered command: " + commandLine);
+                _output.WriteLine("User entered command: " + commandLine);
 
                 try
                 {
