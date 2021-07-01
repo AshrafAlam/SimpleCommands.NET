@@ -12,7 +12,7 @@ namespace SimpleCommands.Tests
         }
 
         [Fact]
-        public void ProcessCommands_NoCommandPassed_ShouldProvideEmptyResponse()
+        public void ProcessCommands_NoCommandPassed_ShouldShowEmptyResponse()
         {
             //Arrange 
             var commandStreamProcessor =
@@ -30,7 +30,7 @@ namespace SimpleCommands.Tests
         }
 
         [Fact]
-        public void ProcessCommands_WrongCommandsPassed_Should()
+        public void ProcessCommands_WrongCommandsPassed_ShouldShowErrorMessage()
         {
             //Arrange 
             var commandStreamProcessor =

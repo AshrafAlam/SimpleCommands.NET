@@ -15,7 +15,7 @@ namespace SimpleCommands.Core.Command.Commands
 
         public override void Execute(string[] args)
         {
-            if (args.Length == 0)
+            if (args.Length != 1)
                 throw new InvalidCommandArgumentLengthException(1);
 
             var helloWriter = new HelloWriter(_output);
