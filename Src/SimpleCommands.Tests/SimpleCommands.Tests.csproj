@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="TestData\ProcessCommands_Hello_ExtraParam_Input.txt" />
+    <None Remove="TestData\ProcessCommands_Hello_ExtraParam_Output.txt" />
     <None Remove="TestData\ProcessCommands_Hello_MultipleCommand_Input.txt" />
     <None Remove="TestData\ProcessCommands_Hello_MultipleCommand_Output.txt" />
+    <None Remove="TestData\ProcessCommands_Hello_NoParam_Input.txt" />
+    <None Remove="TestData\ProcessCommands_Hello_NoParam_Output.txt" />
     <None Remove="TestData\ProcessCommands_Hello_SingleCommand_Input.txt" />
     <None Remove="TestData\ProcessCommands_Hello_SingleCommand_Output.txt" />
     <None Remove="TestData\ProcessCommands_NoCommand_Input.txt" />
@@ -18,6 +22,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="TestData\ProcessCommands_Hello_ExtraParam_Output.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ProcessCommands_Hello_ExtraParam_Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ProcessCommands_Hello_NoParam_Output.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ProcessCommands_Hello_NoParam_Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\ProcessCommands_Hello_MultipleCommand_Output.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
