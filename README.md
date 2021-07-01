@@ -1,4 +1,4 @@
-https://github.com/AshrafAlam/SimpleCommands.NET/actions/workflows/dotnet.yml/badge.svg
+![Workflow](https://github.com/AshrafAlam/SimpleCommands.NET/actions/workflows/dotnet.yml/badge.svg)
 
 #  Simple Commands Console 
 
